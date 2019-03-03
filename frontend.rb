@@ -2,13 +2,12 @@ require "http"
 
 system "clear"
 puts "Welcome to my contact book!"
-puts "Which contact do you want to view?"
-puts "Pick 1, 2, 3, or random"
+puts "Would you like to see who my first contact is?"
 
 input_option = gets.chomp
-if input_option == "1"
+if input_option == "yes"
   response = HTTP.get("http://localhost:3000/api/my_contacts_url")
-  fortune = response.parse[""]
+  contact_info = response.parse[""]
 elsif input option == "2"
 
 elsif input option == "3"

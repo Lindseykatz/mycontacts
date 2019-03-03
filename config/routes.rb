@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
   namespace :api do
-    get "/my_contacts_url" => "mycontacts#my_contacts_method"
+    get "/contacts" => "mycontacts#index"
+    get "/contacts/:id" => "mycontacts#show"
+    post "/contacts" => "mycontacts#create"
+    patch "/contacts/:id" => "mycontacts#update"
+    delete "/contacts/:id" => "mycontacts#destroy"
   end
-
 end
