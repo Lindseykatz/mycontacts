@@ -6,3 +6,5 @@ json.email contact.email
 json.phone_number contact.phone_number
 json.updated_at contact.friendly_updated_at
 json.phone_number contact.japan_phone_number
+json.middle_name contact.middle_name
+json.bio contact.bio
