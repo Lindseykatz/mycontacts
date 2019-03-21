@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
   get "/contacts" => "contacts#index"
-  # get "/contacts/:id" => "contacts#show"
+  get "/contacts/:id" => "contacts#show"
 
   namespace :api do
     get "/contacts" => "mycontacts#index"
